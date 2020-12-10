@@ -10,7 +10,7 @@ function process_request(req,resp){
     console.log(req.url);
     switch(p.pathname){
         case "/":
-            fs.readFile("calc.html",function(err,data)
+            fs.readFile("/public/index.html",function(err,data)
             {
                 if(err)
                 {
